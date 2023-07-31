@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-header a{
+header{
     padding: 10px;
     background-color: (182, 108, 47);
 }
