@@ -5,6 +5,13 @@ header{
     padding: 10px;
     background-color: (182, 108, 47);
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 100px;
+    margin-bottom: 20px;
+}
 h1{
     background-color: (182, 108, 47)
 }
@@ -30,17 +37,17 @@ h1{
     float: left;
 }
 section{
-    width: 33%;
+    width: 33.3333%;
     float: left;
     padding: 10px;
 }
 aside{
-    width: 33%;
+    width: 33.3333%;
     float: left;
     padding: 10px;
 }
 article{
-    width: 33%;
+    width: 33.3333%;
     float: left;
     padding: 10px;
     display: block;
