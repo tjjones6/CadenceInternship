@@ -51,9 +51,10 @@ article{
     width: 50%;
     float: left;
     padding: 10px;
+    display: block;
 }
 @media screen and (max-width:600px){
-    aside, section, article, .button2:hover, img{
+    aside, section, article, .button2:hover, img, h1{
         width: 100%;
         height: 100%;
         align-items: center;
@@ -71,4 +72,10 @@ article{
 }
 .button2:hover{
     box-shadow: 0 10px 16px 0 rgba(228,129,30,255), 0 6px 20px 0 rgba(228,129,30,255);
+}
+table, th, td{
+    background-color: rgb(27,27,27);
+    border: 2px solid antiquewhite;
+    border-radius: none;
+    margin: 10px;
 }
