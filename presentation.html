@@ -19,7 +19,9 @@
         }
 
         button {
-            background-color: #007BFF;
+            /* background-color: #007BFF; */
+            background-color: gray;
+            text-shadow: 2px 2px 4px #000000;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -27,7 +29,9 @@
         }
 
         #prevBtn, #nextBtn {
-            margin-top: 500px;
+            position: static;
+            margin: 5px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -44,18 +48,24 @@
         </ul>
     </nav>
 
-    <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
+    <!--<header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
         border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px;">
         Research & Development
         <h1 style="font-size: 30px;"> Pad Printing Presentation</h1>
-    </header>
+    </header> -->
 
 <div class="slide active-slide">
-    <h1> Slide 1</h1>
+    <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
+        border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px; width: 99%;">
+        Research & Development
+            <h1 style="font-size: 30px;"> Pad Printing Presentation</h1>
+    </header>
     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum magni vero beatae natus
          provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
+         <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
     <footer style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 25px; text-shadow: 2px 2px 4px #000000;
-    border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; margin:5px; padding: 25px;"> Tyler Jones | Engineering Intern | Cadence Inc. | Summer 2023</footer>
+    border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; margin: 5px; padding: 10px; position:relative; width: 99%;"> Tyler Jones | Engineering Intern | Cadence Inc. | Summer 2023</footer>
 </div>
 
 <div class="slide">
@@ -68,9 +78,10 @@
     <p>This is the content of slide 3.</p>
 </div>
 
+<!--
 <button id="prevBtn">Previous</button>
 <button id="nextBtn">Next</button>
-
+-->
 
 <script>
     const slides = document.querySelectorAll('.slide');
