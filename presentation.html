@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin-bottom: 50px;
         }
 
         .slide {
@@ -24,17 +26,29 @@
             text-shadow: 2px 2px 4px #000000;
             color: white;
             border: outset;
-            border-color: black;
-            box-shadow:hover 0 10px 16px 0 rgba(228,129,30,255), 0 6px 20px 0 rgba(228,129,30,255);
+            border-color: rgb(218, 113, 22);
             padding: 10px 20px;
             cursor: pointer;
         }
 
-        #prevBtn, #nextBtn {
+        #prevBtn,
+        #nextBtn,
+        #exitBtn {
             position: static;
-            margin: 5px;
+            display: in-block;
+            margin: 0;
             border-radius: 5px;
+            text-align: center;
+            width: 33%;
         }
+        /* #exitBtn{
+            position: static;
+            margin: 1%;
+            border-radius: 5px;
+            width: 30%;
+            float: left;
+        }
+        */
     </style>
 </head>
 
@@ -50,66 +64,95 @@
         </ul>
     </nav>
 
-    <!--<header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
-        border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px;">
-        Research & Development
-        <h1 style="font-size: 30px;"> Pad Printing Presentation</h1>
-    </header> -->
+    <!-- Title Slide -->
+    <div class="slide active-slide">
+        <h1 style="font-size: 60px; margin-top: 10%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+            Continuous Improvement: Pad Printing
+            <h1 style="font-size: 25px; margin-bottom: 20%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+                 Tyler Jones</h1> </h1>
+    </div>
 
-<div class="slide active-slide">
-    <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
+    <!-- Introduction to Pad Printing -->
+    <div class="slide">
+        <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
         border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px; width: 99%;">
-        Research & Development
-            <h1 style="font-size: 30px;"> Pad Printing Presentation</h1>
-    </header>
-    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum magni vero beatae natus
-         provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
-         <button id="prevBtn">Previous</button>
-        <button id="nextBtn">Next</button>
+            Introduction to Pad Printing
+        </header>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum
+            magni vero beatae natus
+            provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
+    </div>
+
+    <!-- Problems/challenges-->
+    <div class="slide">
+        <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
+        border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px; width: 99%;">
+            Initial Problems and Challenges
+        </header>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum
+            magni vero beatae natus
+            provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
+    </div>
+
+    <!-- Solutions/remedies-->
+    <div class="slide">
+        <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
+        border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px; width: 99%;">
+            Solutions and Remedies
+        </header>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum
+            magni vero beatae natus
+            provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
+    </div>
+
+    <!-- Summary/analysis-->
+    <div class="slide">
+        <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
+        border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px; width: 99%;">
+            Final Analysis
+        </header>
+    </div>
+
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+    <button id="exitBtn">Exit</button>
+
     <footer style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 25px; text-shadow: 2px 2px 4px #000000;
-    border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; margin: 5px; padding: 10px; position:relative; width: 99%;"> Tyler Jones | Engineering Intern | Cadence Inc. | Summer 2023</footer>
-</div>
+    border-radius:60px; margin: 5px; padding: 10px; position:relative; width: 99%; box-shadow: 2px 2px 4px #000000;" 
+    > Tyler Jones | Engineering Intern |
+        Cadence Inc. | Summer 2023 
+    <h1 style="margin: 0px; padding-top: 5px;">
+        <img src="Cadence.jpg" style="width: 5%; text-align: center; margin: 0px; display: inline-block; border-radius: 20px; box-shadow: 2px 2px 4px #000000;">
+    </h1>
+</footer>
 
-<div class="slide">
-    <h1>Slide 2</h1>
-    <p>This is the content of slide 2.</p>
-</div>
 
-<div class="slide">
-    <h1>Slide 3</h1>
-    <p>This is the content of slide 3.</p>
-</div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
 
-<!--
-<button id="prevBtn">Previous</button>
-<button id="nextBtn">Next</button>
--->
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active-slide'));
+            slides[index].classList.add('active-slide');
+        }
 
-<script>
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
 
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active-slide'));
-        slides[index].classList.add('active-slide');
-    }
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
 
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        document.getElementById('prevBtn').addEventListener('click', prevSlide);
+        document.getElementById('nextBtn').addEventListener('click', nextSlide);
+
+        // Show the first slide initially
         showSlide(currentSlide);
-    }
+    </script>
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-
-    document.getElementById('prevBtn').addEventListener('click', prevSlide);
-    document.getElementById('nextBtn').addEventListener('click', nextSlide);
-
-    // Show the first slide initially
-    showSlide(currentSlide);
-</script>
-    
 </body>
+
 </html>
