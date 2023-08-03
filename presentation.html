@@ -32,23 +32,23 @@
         }
 
         #prevBtn,
-        #nextBtn,
-        #exitBtn {
+        #nextBtn {
+            display: inline-block;
             position: static;
-            display: in-block;
-            margin-left: 2%;
+            margin-left: 0;
             border-radius: 5px;
             text-align: center;
-            width: 30%;
+            width: 45%;
         }
-        /* #exitBtn{
+
+        #exitBtn {
+            display: inline-block;
             position: static;
-            margin: 1%;
+            margin-left: 0;
             border-radius: 5px;
-            width: 30%;
-            float: left;
+            text-align: center;
+            width: 9%;
         }
-        */
     </style>
 </head>
 
@@ -64,23 +64,102 @@
         </ul>
     </nav>
 
-    <!-- Title Slide -->
+    <!-- Title Slide 
     <div class="slide active-slide">
-        <h1 style="font-size: 60px; margin-top: 10%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+        <h1
+            style="font-size: 60px; margin-top: 10%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
             Continuous Improvement: Pad Printing
-            <h1 style="font-size: 25px; margin-bottom: 20%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
-                 Tyler Jones</h1> </h1>
+            <h1
+                style="font-size: 25px; margin-bottom: 20%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+                Tyler Jones</h1>
+        </h1>
     </div>
+-->
 
     <!-- Introduction to Pad Printing -->
     <div class="slide">
-        <header style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 50px; text-shadow: 2px 2px 4px #000000;
-        border-top-left-radius: 10px; border-top-right-radius: 10px; margin:5px; padding: 10px; width: 99%;">
-            Introduction to Pad Printing
-        </header>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum
-            magni vero beatae natus
-            provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
+        <h1
+            style="font-size: 60px; margin: 1%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+            Introduction to Pad Printing </h1>
+
+        <!-- Article -->
+        <article style="width: 60%;">
+            <h3 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 100%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+                 margin-top: 0%">
+                What is Pad Printing?</h3>
+            <p style="color: white; font-size: medium; text-align: center;">
+                Pad printing (also reffered to as tampography) is a manufacturing printing process that transforms a
+                2-dimensional
+                image onto a 3-dimensional body by actuating an applicator between two offsets. The most common
+                industies include:
+                medical, automotive, apparel, and electronics!
+            </p>
+            <h3 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 100%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+                 margin-top: 0%">
+                Cycle Overview </h3>
+            <ul style="color: white; font-size: medium;">
+                <li style="margin: 5px;"> I: Home Position </li>
+                <ul>
+                    <li> The ink cup (inverted to trap the ink) rests over an etched out image on the printing plate
+                        (cliché). </li>
+                </ul>
+                <li style="margin: 5px;"> II: Leave Home Position </li>
+                <ul>
+                    <li> The ink cup is linearly actuated away from the ink-filled etched image. The ink becomes tacky
+                        due to the
+                        exposure to air which aids its adhesive properties.
+                    </li>
+                </ul>
+                <li style="margin: 5px;"> III: Actuate Transfer Pad Downward </li>
+                <ul>
+                    <li> The transfer pad is linearly actuated downward onto the etching momentarily where the ink
+                        adheres to the
+                        pad surface.
+                    </li>
+                </ul>
+                <li style="margin: 5px;"> IV: Actuate Transfer Pad Upward </li>
+                <ul>
+                    <li> The transfer pad is linearly actuated upward. A negligible amount of ink is left in the
+                        ethcing.</li>
+                </ul>
+                <li style="margin: 5px;"> V: Actuate Transfer Pad and Ink Cup </li>
+                <ul>
+                    <li> As the transfer pad is actuated over the substrate, the ink cup is actuated back over the
+                        etching
+                        to prepare for the next cycle.
+                    </li>
+                </ul>
+                <li style="margin: 5px;"> VI: Actuate Transfer Pad Downward </li>
+                <ul>
+                    <li> The transfer pad is actuated downward onto the subtrate such that the pressure is great enough
+                        to
+                        completely transfer the image and conform to the substrate's geometry.
+                    </li>
+                </ul>
+            </ul>
+        </article>
+
+        <aside style="width: 40%;">
+            <h3 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 100%; border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+                 margin-top: 0%;">
+                Dual Pad Printing</h3>
+            <p style="color: white; font-size: medium; text-align: center;">
+                At Cadence, pad printing is optimized by using the PS-2200 2-color pad printer in order to keep up with
+                demand. This is necessary because
+                the Stryker Torque Wrench requires a mirrored image on the other half of the external sleeve. With the
+                addition of dual sided pad printing,
+                labor is essentially cut in half since the operator does not have to print one side at a time.
+            </p>
+            <a href="https://www.inkcups.com/pad-printing-machine/2-color-pad-printer-with-pad-slide/">
+                <img src="2200PS.jpg"
+                    style="width: 80%; height: auto; border-radius: 10px; display: inline-block; margin-left: 10%;"
+                    class="button2">
+            </a>
+        </aside>
+
     </div>
 
     <!-- Problems/challenges-->
@@ -113,48 +192,51 @@
         </header>
     </div>
 
-    <button id="prevBtn"> <<< Previous</button>
-    <button id="nextBtn"> Next >>></button>
-    <a href="padPrinting.html">
-    <button id="exitBtn">Exit</button>
-    </a>
+    <button id="prevBtn">
+        <<< Previous</button>
+            <button id="nextBtn"> Next >>></button>
+            <a href="padPrinting.html">
+                <button id="exitBtn">Exit</button>
+            </a>
 
-    <footer style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 25px; text-shadow: 2px 2px 4px #000000;
-    border-radius:20px; margin: 5px; padding: 10px; position:relative; width: 99%; box-shadow: 2px 2px 4px #000000;" 
-    > Tyler Jones | Engineering Intern |
-        Cadence Inc. | Summer 2023 
-    <h1 style="margin: 0px; padding-top: 5px;">
-        <img src="Cadence.jpg" style="width: 80px; text-align: center; margin: 0px; border-radius: 20px; box-shadow: 2px 2px 4px #000000;">
-    </h1>
-</footer>
+            <script>
+                const slides = document.querySelectorAll('.slide');
+                let currentSlide = 0;
 
+                function showSlide(index) {
+                    slides.forEach(slide => slide.classList.remove('active-slide'));
+                    slides[index].classList.add('active-slide');
+                }
 
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
+                function prevSlide() {
+                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                    showSlide(currentSlide);
+                }
 
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active-slide'));
-            slides[index].classList.add('active-slide');
-        }
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                }
 
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
+                document.getElementById('prevBtn').addEventListener('click', prevSlide);
+                document.getElementById('nextBtn').addEventListener('click', nextSlide);
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        document.getElementById('prevBtn').addEventListener('click', prevSlide);
-        document.getElementById('nextBtn').addEventListener('click', nextSlide);
-
-        // Show the first slide initially
-        showSlide(currentSlide);
-    </script>
+                // Show the first slide initially
+                showSlide(currentSlide);
+            </script>
 
 </body>
+
+<footer style="background-color: rgba(228,129,30,255);color: white; text-align: center; font-size: 25px; text-shadow: 2px 2px 4px #000000;
+border-radius:20px; margin: 5px; padding: 10px; position:relative; width: 99%; box-shadow: 2px 2px 4px #000000;">
+    Tyler Jones | Engineering Intern |
+    Cadence Inc. | Summer 2023
+    <h1 style="margin: 0px; padding-top: 5px;">
+        <a href="https://www.cadenceinc.com/">
+        <img src="Cadence.jpg"
+            style="width: 80px; text-align: center; margin: 0px; border-radius: 20px; box-shadow: 2px 2px 4px #000000;">
+            </a>
+    </h1>
+</footer>
 
 </html>
