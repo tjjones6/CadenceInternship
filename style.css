@@ -64,6 +64,7 @@ article {
     display: block;
 }
 
+/*
 @media screen and (max-width:600px) {
 
     aside,
@@ -79,6 +80,7 @@ article {
         border-radius: 10px;
     }
 }
+*/
 
 @media screen and (max-width:600px) {
 
