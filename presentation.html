@@ -34,7 +34,7 @@
         #prevBtn,
         #nextBtn {
             display: inline-block;
-            position: static;
+            position:static;
             margin-left: 0;
             border-radius: 5px;
             text-align: center;
@@ -174,11 +174,12 @@
                 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                  padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 15px; margin: 0px">
                 Wrench Deflection During Printing</h3>
-            <article style="width: 40%;">
-                <p style="color: white; text-align: center; font-size: large;">
+                </header>
+            <article style="width: 50%; display: flexbox;">
+                <p style="color: white; text-align: center; font-size: large; margin-left: 20%; margin-bottom: 5%;">
                     One of the immediate irregularities that was discovered was the deflection of the torque wrench when
                     pressure was applied. Not only
-                    does this add additional compressive and tensiles stresses to the body, it retards the ability of
+                    does this add additional compressive and tensiles stresses to the external housing, it retards the ability of
                     the applicator to print the Stryker
                     logo. As can be seen in the short video, the applicator applies a significant distributed load such
                     that a fixture needed to be
@@ -187,7 +188,7 @@
                     from bending the wrench, a step was added to the fixture to secure a better contact surface on the
                     wrench.
                 </p>
-                <p style="color: white; text-align: center; font-size: large;">
+                <p style="color: white; text-align: center; font-size: large;  margin-left: 20%; margin-bottom: 5%;">
                     Although this cannot be seen in the video, the fixture's geometry is designed such that the wrench's
                     base sits on a concentric
                     cylinder. This base support is counteracted by a pin at the head of the wrench which results in a
@@ -195,21 +196,22 @@
                     and allows the wrench to "snap" in place.
                 </p>
             </article>
-            <section style="width: 40%;">
-                <p style="color: white; font-size: medium; text-align: center; margin-left: 0%;">
+            <section style="width: 40%; display: flexbox;">
+                <h3 style="color: white; font-size: medium; text-align: center; margin-left: 10%;">
                     <video width="80%" controls="controls"
-                        style="margin-left: 0px; border-radius: 25px; border: solid; border-color: antiquewhite;">
+                        style="border-radius: 5%; border: solid; border-color: antiquewhite; min-width: 150px;">
                         <source src="StrykerBendingRev1.mp4" type="video/mp4" />
                     </video>
-                </p>
+                </h3>
             </section>
-        </header>
-        <header style="margin-top: 25%; width: 100%">
+    
+        <header style="width: 100%; margin-top: 10%; display: flex;">
             <h3
                 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                  padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 15px; margin-left: 10%;">
                 Shifted Print (Double Vision)</h3>
-            <article style="width: 40%; margin-left: 10%;">
+                </header>
+            <article style="width: 40%; margin-left: 10%; display: flexbox;">
                 <p style="color: white; text-align: center; font-size: large;">
                     As can be seen, double vision is derived from pad printed parts that have shifted images. This
                     occurs when the operator needs to
@@ -219,7 +221,7 @@
                     wrench's body which requires
                     another cycle of clean printing.
                 </p>
-                <p style="color: white; text-align: center; font-size: large;">
+                <p style="color: white; text-align: center; font-size: large; display: flexbox;">
                     In order to properly clean the applicator, the operator needs to remove the upper fixture that the
                     applicator slides into. Once the
                     operator cleans the applicator using the TPV thinner, the applicator gets mounted back onto the
@@ -228,9 +230,10 @@
                     of pad printing causes produces
                     the defect known as double vision.
                 </p>
-                <p style="color: white; text-align: center; font-size: large;">
-                    It should be noted that shifted prints madeup nearly 50% of the scrap (not including the scrap fixed
-                    by the procedural changes).
+                <p style="color: white; text-align: center; font-size: large; display: flexbox;">
+                    Other notable issues with the printing process revolve around the viscosity of the mixture. If the mixture is too
+                    viscous, then the print will tend to miss spots as opposed to a far less viscous mixture which will tend to 
+                    smear and run.
                 </p>
             </article>
             <section style="width: 40%;">
@@ -239,10 +242,9 @@
                         style="width: 80%; border: solid; border-color: antiquewhite; border-radius: 25px;">
                 </p>
             </section>
-        </header>
     </div>
 
-    <!-- Tangible Solutions-->
+    <!-- Tangible Solutions -->
     <div class="slide">
         <h1
             style="font-size: 60px; margin: 1%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
@@ -251,54 +253,43 @@
                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 40%; border-radius: 20px;
                 margin-left: 30%">
             Solutions </h3>
-        <header style="width: 100%; margin-left: 10%;">
+        <header style="width: 100%; margin-left: 10%; display: flexbox;">
             <h3
                 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                      padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 15px; margin: 0px">
-                Wrench Deflection During Printing</h3>
-            <article style="width: 40%;">
+                Wrench Deflection During Printing</h3> </header>
+            <article style="width: 40%; display: flexbox; margin-left: 10%;">
                 <p style="color: white; text-align: center; font-size: large;">
-                    One of the immediate irregularities that was discovered was the deflection of the torque wrench when
-                    pressure was applied. Not only
-                    does this add additional compressive and tensiles stresses to the body, it retards the ability of
-                    the applicator to print the Stryker
-                    logo. As can be seen in the short video, the applicator applies a significant distributed load such
-                    that a fixture needed to be
-                    built. This fixture is supposed to support the handles of the wrench; however, it failed to do so.
-                    In order to stop the applicator
-                    from bending the wrench, a step was added to the fixture to secure a better contact surface on the
-                    wrench.
+                    The solution to fix wrench deflection was quite simple. In order to get a better contact between the fixture 
+                    and the external housing arms, a shim was added to the base of the fixture to raise it up. This simple fix 
+                    comfortably allows the applicator to apply an evenly distributed load on the external housing.
                 </p>
                 <p style="color: white; text-align: center; font-size: large;">
-                    Although this cannot be seen in the video, the fixture's geometry is designed such that the wrench's
-                    base sits on a concentric
-                    cylinder. This base support is counteracted by a pin at the head of the wrench which results in a
-                    sufficient reaction force
-                    and allows the wrench to "snap" in place.
+                    As can be seen in the video, the part is secured properly and thus subject to less stress. More importantly,
+                    the prints are more clear towards the head of the housing.
                 </p>
             </article>
-            <section style="width: 40%;">
-                <p style="color: white; font-size: medium; text-align: center; margin-left: 0%;">
+            <section style="width: 40%; display: flexbox; margin-right: 10%;">
+                <p style="color: white; font-size: medium; text-align: center;">
                     <video width="80%" controls="controls"
                         style="margin-left: 0px; border-radius: 25px; border: solid; border-color: antiquewhite;">
                         <source src="StrykerBendingRev1.mp4" type="video/mp4" />
                     </video>
                 </p>
             </section>
-        </header>
-        <header style="margin-top: 25%; width: 100%">
+        <header style="margin-top: 25%; width: 100%; display: flexbox;">
             <h3
                 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                      padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 15px; margin-left: 10%;">
-                Shifted Print (Double Vision)</h3>
+                Shifted Print (Double Vision)</h3></header>
             <article style="width: 40%; margin-left: 10%;">
-                <p style="color: white; text-align: center; font-size: large;">
+                <p style="color: white; text-align: center; font-size: large; display: flexbox;">
                     The solution to eliminate the ongoing issue of double vision is to design and attach a mount. As can
                     be seen in the animation,
                     the applicator assembly (magenta applicator, wood base plate, and purple adapter) is freely allowed
                     to move linearly within
                     the upper fixture (teal plate). </p>
-                <p style="color: white; text-align: center; font-size: large;">
+                <p style="color: white; text-align: center; font-size: large; display: flexbox;">
                     With the addition of a mount/stopper (red plate), the applicator assembly with catch on the front
                     face of the upper fixture.
                     The width of the mount/stopper is dependent on the desired distance of the operator.
@@ -307,25 +298,92 @@
             <section style="width: 40%;">
                 <p style="color: white; font-size: medium; text-align: center; margin-left: 0%;">
                     <video width="100%" controls="controls"
-                        style="margin-left: 0px; border-radius: 25px; border: solid; border-color: antiquewhite;">
+                        style="margin-left: 0px; border-radius: 25px; border: solid; border-color: antiquewhite; min-height: 100px;">
                         <source src="PadMountAssembly.mp4" type="video/mp4" />
                     </video>
                 </p>
             </section>
-        </header>
     </div>
 
 
-    <!-- Procedural Enhancements-->
+    <!-- Procedural Enhancements Research -->
     <div class="slide">
+        <style>
+            #TPR {
+                width: 100%;
+                height: 1000px;
+            }
+        </style>
         <h1 style="font-size: 60px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
             Procedural Enhancements </h1>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum vitae doloribus eius voluptatem ex rerum
-            magni vero beatae natus
-            provident, officiis minima autem velit nulla magnam esse delectus mollitia. Quidem.</p>
+            <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+            padding: 10px; border-color: antiquewhite; border-style: solid; width: 40%; border-radius: 20px;
+            margin-left: 30%">
+        Research: TPR (Ink)
+        </h3>
+        <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+        padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 20px;
+        margin-left: 10%">
+            <iframe id="TPR.html" src="TPR.html" seamless style="width: 100%; height: 1000px;"></iframe>
+            </h3>
     </div>
 
-    <!-- Savings Analysis-->
+        <!-- Procedural Enhancements Research -->
+        <div class="slide">
+            <style>
+                #TPV {
+                    width: 100%;
+                    height: 1000px;
+                }
+            </style>
+            <h1 style="font-size: 60px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+                Procedural Enhancements </h1>
+                <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                padding: 10px; border-color: antiquewhite; border-style: solid; width: 40%; border-radius: 20px;
+                margin-left: 30%">
+            Research: TPV (Thinner)
+            </h3>
+            <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+        padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 20px;
+        margin-left: 10%">
+                <iframe id="TPV.html" src="TPV.html" seamless style="width: 100%; height: 1000px;"></iframe>
+                </h3>
+        </div>
+
+            <!-- Procedural Enhancements Research -->
+    <div class="slide">
+        <style>
+            #Evaporation {
+                width: 100%;
+                height: 1000px;
+            }
+        </style>
+        <h1 style="font-size: 60px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+            Procedural Enhancements </h1>
+            <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+            padding: 10px; border-color: antiquewhite; border-style: solid; width: 40%; border-radius: 20px;
+            margin-left: 30%">
+        Research: Evaporation Data
+        </h3>
+        <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+        padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 20px;
+        margin-left: 10%">
+            <iframe id="EvaporationData.html" src="EvaporationData.html" seamless style="width: 100%; height: 1000px;"></iframe>
+            </h3>
+    </div>
+    
+        <!-- Procedural Enhancements -->
+        <div class="slide">
+            <h1 style="font-size: 60px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+                Procedural Enhancements </h1>
+                <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                padding: 10px; border-color: antiquewhite; border-style: solid; width: 40%; border-radius: 20px;
+                margin-left: 30%">
+            Mixture Analysis
+            </h3>
+        </div> 
+
+    <!-- Savings Analysis
     <div class="slide">
         <style>
             #SavingsAnalysis {
@@ -339,8 +397,9 @@
         padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 20px;
         margin-left: 10%">
             <iframe id="SavingsAnalysis" src="SavingsAnalysis.html" seamless></iframe>
-    </div>
-
+            </h3>
+    </div> -->
+    
     <button id="prevBtn">
         <<< Previous</button>
             <button id="nextBtn"> Next >>></button>
