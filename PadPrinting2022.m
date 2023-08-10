@@ -4,6 +4,7 @@
 % ----------------------------------------------------------------------
 
 %% Read Data and Write Basic Calculations to Command Window
+close all;
 clear;
 clc;
 
@@ -210,15 +211,15 @@ for j = 1:length(Days_Recent)
     ylim([0 .25])
     xlabel('Time')
     ylabel('Normalized Scrap Cost ($/good part)')
-    title('Normalized Scrap Cost vs Time')
+    title('New Normalized Scrap Cost vs Time')
     legend('2022 Average Normalized Scrap Cost','2023 Average Normalized Scrap Cost','New Normalized Scrap Cost',Location='nw')
-    movieVector(j) = getframe(ScrapPercShortFig);
+    movieVectorNew(j) = getframe(ScrapPercShortFig);
 end
-    myWriter = VideoWriter('ScrapPercentageShortVsTime','MPEG-4');
-    myWriter.FrameRate = 5;
-    open(myWriter);
-    writeVideo(myWriter, movieVector);
-    close(myWriter);
+    newWriter = VideoWriter('ScrapPercentageShortVsTime','MPEG-4');
+    newWriter.FrameRate = 5;
+    open(newWriter);
+    writeVideo(newWriter, movieVectorNew);
+    close(newWriter);
     clc
 
 %% Animation of Scrap Cost vs Time

@@ -4,8 +4,7 @@
 % ----------------------------------------------------------------------
 
 %% Read Data and Write Basic Calculations to Command Window
-clear;
-clc;
+clear all, close all, clc;
 
 % Read data in from excel as a table
 GoodPartsTable_2022 = readtable('TD11840_2022.xlsx','Range','H42:H95');
@@ -210,7 +209,7 @@ for j = 1:length(Days_Recent)
     ylim([0 .25])
     xlabel('Time')
     ylabel('Normalized Scrap Cost ($/good part)')
-    title('Normalized Scrap Cost vs Time')
+    title('New Average Scrap Cost vs Time')
     legend('2022 Average Normalized Scrap Cost','2023 Average Normalized Scrap Cost','New Normalized Scrap Cost',Location='nw')
     movieVector(j) = getframe(ScrapPercShortFig);
 end
@@ -296,9 +295,9 @@ for j = 1:length(Days_2022)
     GoodPartsNowAnim_2023(j) = sum(GoodParts_2023(1:j));
     GoodPartsDiff(j) = abs(GoodPartsNowAnim_2023(j) - GoodPartsNowAnim_2022(j));
 
-    plot(Days_2022,GoodPartsNowAnim_2022);
+    plot(Days_2022,GoodPartsNowAnim_2022,'Color','Blue');
     hold on
-    plot(Days_2022,GoodPartsNowAnim_2023);
+    plot(Days_2022,GoodPartsNowAnim_2023,'Color','Red');
     text(1,37000, sprintf('2022 Good Parts: %.0f',GoodPartsNowAnim_2022(j)))
     text(1,36000, sprintf('2023 Time-Equivalent Good Parts: %.0f',GoodPartsNowAnim_2023(j)))
     text(12.85,36000, sprintf(' of %.0f',TotalGoodParts_2023))
@@ -430,13 +429,13 @@ for j = 1:length(Days_2022)
     BadPartsNowAnim_2023(j) = sum(BadParts_2023(1:j));
     BadPartsDiff(j) = abs(BadPartsNowAnim_2023(j) - BadPartsNowAnim_2022(j));
 
-    plot(Days_2022,BadPartsNowAnim_2022);
+    plot(Days_2022,BadPartsNowAnim_2022,'Color','Blue');
     hold on
-    plot(Days_2022,BadPartsNowAnim_2023);
-    text(1,2100, sprintf('2022 Good Parts: %.0f',BadPartsNowAnim_2022(j)))
-    text(1,2050, sprintf('2023 Time-Equivalent Good Parts: %.0f',BadPartsNowAnim_2023(j)))
-    text(12.5,2050, sprintf(' of %.0f',TotalGoodParts_2023))
-    text(1,00, sprintf('Absolute Good Parts Difference: %.0f',BadPartsDiff(j)))
+    plot(Days_2022,BadPartsNowAnim_2023,'Color','Red');
+    text(1,2100, sprintf('2022 Bad Parts: %.0f',BadPartsNowAnim_2022(j)))
+    text(1,2050, sprintf('2023 Time-Equivalent Bad Parts: %.0f',BadPartsNowAnim_2023(j)))
+    text(12.1,2050, sprintf(' of %.0f',TotalBadParts_2023))
+    text(1,2000, sprintf('Absolute Bad Parts Difference: %.0f',BadPartsDiff(j)))
 
     xlim([0 54])
     ylim([0 2300])
