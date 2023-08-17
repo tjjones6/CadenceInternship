@@ -59,6 +59,7 @@
             font-size: 25px;
             border-radius: 50%;
         }
+
     </style>
 </head>
 
@@ -75,7 +76,7 @@
     </nav>
 
     <!---->
-    <!-- Title Slide -->
+    <!-- Title Slide
     <div class="slide active-slide">
         <h1
             style="font-size: 60px; margin-top: 10%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
@@ -84,63 +85,58 @@
                 style="font-size: 25px; margin-bottom: 20%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
                 Tyler Jones</h1>
         </h1>
-    </div>
+    </div> -->
 
     <!-- Introduction to Pad Printing -->
     <div class="slide">
-        <h1
-            style="font-size: 60px; margin: 1%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
+        <h1 id="slideTitle">
             Introduction to Pad Printing </h1>
 
-        <article style="width: 60%;">
-            <h3 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
-                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 100%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;
-                 margin-top: 0%">
+        <article style="width: 60%; height: 100%;">
+            <h3 id="columnHeaderLeft">
                 What is Pad Printing?</h3>
-            <p style="color: white; font-size: medium; text-align: center;">
+            <p style="color: white; font-size: large; text-align: center;">
                 Pad printing (also reffered to as tampography) is a manufacturing printing process that transforms a
                 2-dimensional
                 image onto a 3-dimensional body by actuating an applicator between two offsets. The most common
                 industries include:
                 medical, automotive, apparel, and electronics!
             </p>
-            <h3 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
-                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 100%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;
-                 margin-top: 0%">
+            <h3 id="columnHeaderLeft">
                 Cycle Overview </h3>
-            <ul style="color: white; font-size: medium;">
-                <li style="margin: 5px;"> I: Home Position </li>
+            <ul>
+                <li> I: Home Position </li>
                 <ul>
                     <li> The ink cup (inverted to trap the ink) rests over an etched out image on the printing plate
                         (cliché). </li>
                 </ul>
-                <li style="margin: 5px;"> II: Leave Home Position </li>
+                <li> II: Leave Home Position </li>
                 <ul>
                     <li> The ink cup is linearly actuated away from the ink-filled etched image. The ink becomes tacky
                         due to the
                         exposure to air which aids its adhesive properties.
                     </li>
                 </ul>
-                <li style="margin: 5px;"> III: Actuate Transfer Pad Downward </li>
+                <li> III: Actuate Transfer Pad Downward </li>
                 <ul>
                     <li> The transfer pad is linearly actuated downward onto the etching momentarily where the ink
                         adheres to the
                         pad surface.
                     </li>
                 </ul>
-                <li style="margin: 5px;"> IV: Actuate Transfer Pad Upward </li>
+                <li> IV: Actuate Transfer Pad Upward </li>
                 <ul>
                     <li> The transfer pad is linearly actuated upward. A negligible amount of ink is left in the
                         ethcing.</li>
                 </ul>
-                <li style="margin: 5px;"> V: Actuate Transfer Pad and Ink Cup </li>
+                <li> V: Actuate Transfer Pad and Ink Cup </li>
                 <ul>
                     <li> As the transfer pad is actuated over the substrate, the ink cup is actuated back over the
                         etching
                         to prepare for the next cycle.
                     </li>
                 </ul>
-                <li style="margin: 5px;"> VI: Actuate Transfer Pad Downward </li>
+                <li> VI: Actuate Transfer Pad Downward </li>
                 <ul>
                     <li> The transfer pad is actuated downward onto the subtrate such that the pressure is great enough
                         to
@@ -150,12 +146,10 @@
             </ul>
         </article>
 
-        <aside style="width: 40%;">
-            <h3 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
-                 padding: 10px; border-color: antiquewhite; border-style: solid; width: 100%; border-top-left-radius: 15px; border-bottom-left-radius: 15px;
-                 margin-top: 0%;">
+        <section style="width: 40%; height: 100%;">
+            <h3 id="columnHeaderRight40Perc">
                 Dual Pad Printing</h3>
-            <p style="color: white; font-size: medium; text-align: center;">
+            <p style="color: white; font-size: large; text-align: center;">
                 At Cadence, pad printing is optimized by using the PS-2200 2-color pad printer in order to keep up with
                 demand. This is necessary because
                 the Stryker Torque Wrench requires a mirrored image on the other half of the external sleeve. With the
@@ -164,10 +158,10 @@
             </p>
             <a href="https://www.inkcups.com/pad-printing-machine/2-color-pad-printer-with-pad-slide/">
                 <img src="2200PS.jpg"
-                    style="width: 80%; height: auto; border-radius: 10px; display: inline-block; margin-left: 10%;"
+                    style="width: 80%; height: auto; border-radius: 10px; display: inline-block; margin-left: 10%; border: solid; border-color: orange;"
                     class="button2">
             </a>
-        </aside>
+        </section>
 
     </div> 
 
@@ -176,10 +170,6 @@
         <h1
             style="font-size: 60px; margin: 1%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
             Tangible Enhancements: Problems </h1>
-        <!-- <h3 style="color: antiquewhite; font-size:50px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
-            padding: 10px; border-color: antiquewhite; border-style: solid; width: 40%; border-radius: 20px;
-            margin-left: 30%">
-            Problems </h3> -->
         <header style="width: 100%; margin-left: 10%;">
             <h3
                 style="color: white; font-size:large; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
@@ -210,7 +200,7 @@
             <section style="width: 40%; display: flexbox;">
                 <h3 style="color: white; font-size: medium; text-align: center; margin-left: 10%;">
                     <video width="80%" controls="controls"
-                        style="border-radius: 5%; border: solid; border-color: antiquewhite; min-width: 150px;">
+                        style="border-radius: 5%; border: solid; border-color: orange; min-width: 150px;">
                         <source src="StrykerBendingRev1.mp4" type="video/mp4" />
                     </video>
                 </h3>
@@ -250,7 +240,7 @@
             <section style="width: 40%;">
                 <p style="color: white; font-size: medium; text-align: center; margin-left: 0%;">
                     <img src="DoubleVision.jpeg"
-                        style="width: 60%; border: solid; border-color: antiquewhite; border-radius: 25px;">
+                        style="width: 60%; border: solid; border-color: orange; border-radius: 25px;">
                 </p>
             </section>
     </div> 
@@ -279,7 +269,7 @@
             <section style="width: 40%; display: box; margin-right: 10%;">
                 <p style="color: white; font-size: medium; text-align: center;">
                     <video width="50%" controls="controls"
-                        style="margin:auto; border-radius: 25px; border: solid; border-color: antiquewhite;">
+                        style="margin:auto; border-radius: 25px; border: solid; border-color: orange;">
                         <source src="StrykerNotBendingRev2.mp4" type="video/mp4" />
                     </video>
                 </p>
@@ -305,7 +295,7 @@
             <section style="width: 40%;">
                 <p style="color: white; font-size: medium; text-align: center; margin-left: 0%;">
                     <video width="100%" controls="controls"
-                        style="margin-left: 0px; border-radius: 25px; border: solid; border-color: antiquewhite; min-height: 100px;">
+                        style="margin-left: 0px; border-radius: 25px; border: solid; border-color: orange; min-height: 100px;">
                         <source src="PadMountAssembly.mp4" type="video/mp4" />
                     </video>
                 </p>
@@ -409,14 +399,14 @@
             padding: 5px; border-color: antiquewhite; border-style: solid; width: 50%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
                    Full Working Day</h3>
                     <ul style="text-align: left; color: white; font-size: large;">
-                        <li> Typically, on a full working day where the operator is pad printing for ~7 hours, 71g of ink and 4g of thinner is ideal.
+                        <li style="margin: 10px;"> Typically, on a full working day where the operator is pad printing for ~7 hours, 71g of ink and 4g of thinner is ideal.
                             The goal is to have just enough mixture at the end of the shift to keep the machine functioning properly.  </li>
                     </ul>
                     <h3 style="color: white; font-size:medium; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                     padding: 5px; border-color: antiquewhite; border-style: solid; width: 50%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
                            Half Working Day</h3>
                 <ul style="text-align: left; color: white; font-size: large;">
-                    <li> Opposed to cutting the full working day measurements in half, the operator should likely stay in the range of 62g ink
+                    <li style="margin: 10px;"> Opposed to cutting the full working day measurements in half, the operator should likely stay in the range of 62g ink
                         and 3.5g thinner. This relatively large amount of mixture is necessary to keep the etching filled towards the end of the shift </li>
                 </ul>
                 <a href="measurementTable.html">
@@ -431,85 +421,85 @@
          padding: 10px; border-style: solid; border-color: antiquewhite; margin: 0px;">
                 Troubleshooting
             </h1>
-
+            <h3 style="color: white; font-size:medium; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+            padding: 5px; border-color: antiquewhite; border-style: solid; width: 50%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                   Mixture Viscosity</h3>
             <ul style="text-align: left; color: white; font-size: large;">
-                <li style="margin: 10px;"> Increased the overall efficiency of work orders by 46.98%</li>
-                <ul>
-                    <li style="margin: 10px;"> 76.77% >>> 123.75% </li>
+                <li style="margin: 10px;"> Mixture may be too thin</li>
+                <ul style="text-align: left; color: white; font-size: large;">
+                    <li style="margin: 10px;"> If the print is smeared/runny </li>
+                    <li style="margin: 10px;"> If the print is abnormally bold/thick</li>
                 </ul>
-                <li style="margin: 10px;"> Increased overall quality of production by 9.64% </li>
-                <ul>
-                    <li style="margin: 10px;"> Quality Definition: Ratio of the number of parts that successfully passed
-                        the pad
-                        printing operation
-                        to the total number of parts [good parts/total parts]</li>
-                    <li style="margin: 10px;"> 89.40% >>> 99.04% </li>
                 </ul>
-                <li style="margin: 10px;"> Increased the daily production of good parts by 27.5%</li>
-                <ul>
-                    <li style="margin: 10px;"> 496 parts >>> 633 parts</li>
+                <ul style="text-align: left; color: white; font-size: large;">
+                    <li style="margin: 10px;"> Mixture may be too thick</li>
+                    <ul style="text-align: left; color: white; font-size: large;">
+                        <li style="margin: 10px;"> If the print is incomplete</li>
+                        <li style="margin: 10px;"> If the applicator cannot pick up the ink from the ethcing</li>
+                    </ul>
                 </ul>
-                <li style="margin: 10px;"> Estimated savings: $0.0907 per good part</li>
-                <ul>
-                    <li> Work orders range ~(6,000 to 11,000) parts</li>
-                    <li> Savings range ~($540 to $1,000)</li>
-                </ul>
-                <li style="margin: 10px;"> Increased stability in production quality </li>
-                <ul>
-                    <li style="margin: 10px;"> Standard deviation in quality from day-to-day: 5.49 >>> .79 </li>
-                </ul>
-            </ul>
+                <h3 style="color: white; font-size:medium; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                padding: 5px; border-color: antiquewhite; border-style: solid; width: 50%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                       General Cleaning</h3>
+                       <ul style="text-align: left; color: white; font-size: large;">
+                        <li style="margin: 10px;"> Missing/Blurry spots</li>
+                        <ul style="text-align: left; color: white; font-size: large;">
+                            <li style="margin: 10px;"> If the applicator is dirty, the ink will not properly transfer/conform to the Stryker Shell geometry </li>
+                            <li style="margin: 10px;"> This can be prevented/cured by cleaning the applicator as well as cleaning the cliché</li>
+                        </ul>
+                        </ul>
+
         </aside>
     </div>
 
-    <!-- Data Analysis-Part Quality Rates -->
+    <!-- Data Analysis Part Quality Rates -->
     <div class="slide">
         <h1
             style="font-size: 60px; margin: 1%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
             Data Analysis: Quality </h1>
             <article style="width: 50%;">
             <h3
-                style="color: white; font-size: 40px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                style="color: white; font-size: 150%; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                      padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 15px; margin-left: 10%">
                 Good Part Production</h3>
             <h1
                 style="font-size: 30px; margin-top: 50px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
                 Normalized Good Part Production </h1>
                 <video width="90%" controls="controls"
-                        style="border-radius: 5%; border: solid; border-color: antiquewhite; min-width: 150px; margin-left: 5%;">
+                        style="border-radius: 5%; border: solid; border-color: orange; min-width: 150px; margin-left: 5%;">
                         <source src="PercGoodPartsVsTime.mp4" type="video/mp4" />
                     </video>
                 <h1
                 style="font-size: 30px; margin-top: 50px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
                 Standard Good Part Production </h1>
                 <video width="90%" controls="controls"
-                style="border-radius: 5%; border: solid; border-color: antiquewhite; min-width: 150px; margin-left: 5%;">
+                style="border-radius: 5%; border: solid; border-color: orange; min-width: 150px; margin-left: 5%;">
                 <source src="GoodPartsVsTime.mp4" type="video/mp4" />
             </video>
         </article>
         <section style="width: 50%;">
             <h3
-                style="color: white; font-size: 40px; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                style="color: white; font-size: 150%; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
                      padding: 10px; border-color: antiquewhite; border-style: solid; width: 80%; border-radius: 15px; margin-left: 5%;">
                 Bad Part Production</h3>
                 <h1
                 style="font-size: 30px; margin-top: 50px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
                 Normalized Bad Part Production </h1>
                 <video width="90%" controls="controls"
-                style="border-radius: 5%; border: solid; border-color: antiquewhite; min-width: 150px; margin-right: 5%;">
+                style="border-radius: 5%; border: solid; border-color: orange; min-width: 150px; margin-right: 5%;">
                 <source src="PercBadPartsVsTime.mp4" type="video/mp4" />
             </video>
                 <h1
                 style="font-size: 30px; margin-top: 50px; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
                 Standard Bad Part Production </h1>
                 <video width="90%" controls="controls"
-                style="border-radius: 5%; border: solid; border-color: antiquewhite; min-width: 150px; margin-right: 5%;">
+                style="border-radius: 5%; border: solid; border-color: orange; min-width: 150px; margin-right: 5%;">
                 <source src="BadPartsVsTime.mp4" type="video/mp4" />
             </video>
         </section>
     </div> 
 
-    <!-- Data Analysis-Part Quality Rates -->
+    <!-- Data Analysis Part Quality Rates -->
     <div class="slide">
         <h1
             style="font-size: 60px; margin: 1%; color: white; text-align: center; text-shadow: 2px 2px 4px rgba(228,129,30,255);">
@@ -552,7 +542,6 @@
             <iframe id="SavingsAnalysis" src="SavingsAnalysis.html" seamless></iframe>
             </h3>
     </div> 
--->
 
     <button id="prevBtn">
         <<< Previous</button>

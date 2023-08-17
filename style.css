@@ -66,13 +66,7 @@ article {
 
 @media screen and (max-width:600px) {
 
-    aside,
-    section,
-    article,
-    .button2:hover,
-    img,
-    h1,
-    div {
+    aside, section, article, .button2:hover, img, h1, h2, h3, ul, li, p {
         width: 100%;
         height: 100%;
         align-items: center;
@@ -80,7 +74,7 @@ article {
     }
 }
 
-
+/*
 @media screen and (max-width:300px) {
 
     header, footer, aside, section, article, .button2:hover, img {
@@ -88,10 +82,38 @@ article {
         height: 100%;
         align-items: center;
         border-radius: 10px;
-        /* margin-bottom: 5px; */
+        /* margin-bottom: 5px; 
     }
 }
+*/
+
 
 .button2:hover {
     box-shadow: 0 10px 16px 0 rgba(228, 129, 30, 255), 0 6px 20px 0 rgba(228, 129, 30, 255);
+}
+
+#slideTitle{
+    font-size: 350%; 
+    margin: 1%;
+    color: white; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(228,129,30,255);
+}
+
+#columnHeaderLeft {
+    color: white; font-size: larger; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                 padding: 1%; border-color: antiquewhite; border-style: solid; width: 100%; border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+                 margin-top: 0%
+}
+
+#columnHeaderRight40Perc {
+    color: white; font-size: larger; text-align: center; background-color: rgba(228,129,30,255);text-shadow:2px 2px 4px black;
+                 border-color: antiquewhite; border-style: solid; width: 100%; border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+                 margin-top: 0%; padding: 1.5%;
+}
+
+li, ul {
+    margin: 1%;
+    color: white;
+    font-size: medium;
 }

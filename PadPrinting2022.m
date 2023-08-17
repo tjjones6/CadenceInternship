@@ -1,7 +1,9 @@
-%% Tyler Jones
-% 08.08.2023
-% This program reads data from the TD11840- excel files and ...
-% ----------------------------------------------------------------------
+%% Pad Printing Analysis
+% Tyler Jones || 08/08/2023
+%
+% * This program reads data from the TD11840- excel files and analyzes how different metrics have evolved in time.
+% * For more details, please visit: <https://tjjones6.github.io/CadenceInternship/padPrinting.html> 
+%
 
 %% Read Data and Write Basic Calculations to Command Window
 close all;
@@ -52,7 +54,7 @@ DiffAveGoodParts = abs(AveGoodParts_2023-AveGoodParts_2022);
 % Scrap Percentage
 ScrapPercentage_2022 = 100*TotalBadParts_2022/(TotalGoodParts_2022+ ...
     TotalBadParts_2022);
-SP_2022 = sprintf('2022 Scrap Percentage: %.2f Percent', ...
+SP_2022 = sprintf('2022 Scrap Percentage: %.2f%%', ...
     ScrapPercentage_2022);
 disp(SP_2022);
 
@@ -62,7 +64,7 @@ disp(SC_2022);
 
 ScrapPercentage_2023 = 100*TotalBadParts_2023/(TotalGoodParts_2023+ ...
     TotalBadParts_2023);
-SP_2023 = sprintf('2023 Scrap Percentage: %.2f Percent', ...
+SP_2023 = sprintf('2023 Scrap Percentage: %.2f%%', ...
     ScrapPercentage_2023);
 disp(SP_2023);
 
@@ -114,7 +116,7 @@ end
 AveScrapCost_2022 = TotalScrapCost_2022/length(Days_2022);
 AveScrapCost_2023 = TotalScrapCost_2023/length(Days_2023);
 
-%% Plot Gross Scrap Cost
+%% Gross Scrap Cost
 figure
 plot(Days_2022,ScrapCostNow_2022);
 hold on
@@ -124,18 +126,17 @@ ylabel('Scrap Cost')
 title('Scrap Cost vs Time')
 legend('2022 Scrap Cost','2023 Scrap Cost',Location='nw')
 
-%% Plot avg scrap cost
+%% Average scrap cost
 figure
 plot(Days_2022,AveScrapCostNow_2022);
 hold on
-plot(Days_2022,ones(size(1:length(Days_2022)))*AveScrapCost_2022)
+% plot(Days_2022,ones(size(1:length(Days_2022)))*AveScrapCost_2022)
 plot(Days_2023,AveScrapCostNow_2023);
-plot(Days_2023,ones(size(1:length(Days_2023)))*AveScrapCost_2023)
+% plot(Days_2023,ones(size(1:length(Days_2023)))*AveScrapCost_2023)
 xlabel('Time')
 ylabel('Average Scrap Cost')
-title('Average Scrap Cost vs Time')
-legend('2022 Avg Scrap Cost','2022 Final Average','2023 Avg Scrap Cost', ...
-    '2023 Final Average')
+title('Moving Average Scrap Cost vs Time')
+legend('2022 Moving Avg Scrap Cost','2023 Moving Avg Scrap Cost')
 
 %% Plot Scrap Per Good Part
 ScrapPercNowAnim_2022 = NaN(1,max(Days_2022),'single');
@@ -184,7 +185,7 @@ end
     close(myWriter);
     clc
 
-%% Animation of RECENT Scrap Per Good Part 
+%% Recent Scrap Per Good Part (Animated)
 DaysTable_Recent = readtable("TD11840_2023.xlsx",'Range','M117:M128');
 Days_Recent = table2array(DaysTable_Recent)';
 AvgArray_2022 = zeros(length(Days_Recent),1) + ScrapPercAvg_2022(end);
@@ -222,8 +223,7 @@ end
     close(newWriter);
     clc
 
-%% Animation of Scrap Cost vs Time
-% --------------------------------
+%% Gross Scrap Cost vs Time (Animated)
 ScrapCostNowAnim_2022 = NaN(1,54,'single');
 ScrapCostNowAnim_2023 = NaN(1,54,'single');
 ScrapCostDiff = NaN(1,54,'single');
@@ -259,7 +259,7 @@ end
     close(myWriter);
     clc
 
-%% Plot Good Parts vs Time
+%% Good Parts vs Time
 figure
 plot(Days_2022,GoodParts_2022);
 hold on
@@ -274,7 +274,7 @@ ylabel('Number of Good Parts')
 title('Good Parts vs Time')
 legend('2022 Good Parts','2023 Good Parts','2022 Average','2023 Average')
 
-%% Plot Gross Good Parts
+%% Gross Good Parts
 figure
 plot(Days_2022,GoodPartsNow_2022);
 hold on
@@ -284,7 +284,7 @@ ylabel('Number of Parts')
 title('Good Parts vs Time')
 legend('2022 Good Parts','2023 Good Parts',Location='nw')
 
-%% Animation of Gross Good Parts vs Time
+%% Gross Good Parts vs Time (Animated)
 GoodPartsNowAnim_2022 = NaN(1,54,'single');
 GoodPartsNowAnim_2023 = NaN(1,54,'single');
 GoodPartsDiff = NaN(1,54,'single');
@@ -320,7 +320,7 @@ end
     close(myWriter);
     clc
 
-%% Animation of Good Parts % vs Time
+%% Good Parts % vs Time (Animated)
 PercBadPartsNowAnim_2022 = NaN(1,max(Days_2022),'single');
 PercBadPartsNowAnim_2023 = NaN(1,max(Days_2022),'single');
 PercBadPartsDiff = NaN(1,max(Days_2022),'single');
@@ -364,7 +364,7 @@ end
     close(myWriter);
     clc
 
-%% Plot Gross Bad Parts
+%% Gross Bad Parts (Animated)
 figure
 plot(Days_2022,BadPartsNow_2022);
 hold on
@@ -374,7 +374,7 @@ ylabel('Number of Parts')
 title('Bad Parts vs Time')
 legend('2022 Bad Parts','2023 Bad Parts',Location='nw')
 
-%% Animation of Bad Parts % vs Time
+%% Bad Parts % vs Time (Animated)
 PercBadPartsNowAnim_2022 = NaN(1,max(Days_2022),'single');
 PercBadPartsNowAnim_2023 = NaN(1,max(Days_2022),'single');
 PercBadPartsDiff = NaN(1,max(Days_2022),'single');
@@ -418,7 +418,7 @@ end
     close(myWriter);
     clc
 
-%% Animation of Gross Bad Parts vs Time
+%% Gross Bad Parts vs Time (Animated)
 BadPartsNowAnim_2022 = NaN(1,54,'single');
 BadPartsNowAnim_2023 = NaN(1,54,'single');
 BadPartsDiff = NaN(1,54,'single');
